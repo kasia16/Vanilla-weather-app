@@ -16,14 +16,13 @@
   </head>
 
   <body>
-<div class="container">
+
 <div class="app-wrapper">
-<div class="app">
-<div class="buttons"
+<div class="container">
 
 <form id="search-form" class="mb-3">
   <div class="row">
-    <div class="col-8">
+    <div class="col-7">
       <input
         type="search"
         placeholder="Type a city.."
@@ -32,40 +31,60 @@
         autocomplete="off"
       />
     </div>
-      <div class="col-2">
-        <button type="button" class="btn btn-primary">Search</button>
-      </div>
+    <div class="col-3">
+      <input
+        type="submit"
+        value="Search"
+        class="btn btn-primary w-100"
+      />
+    </div>
+
+</form>
       <div class="col-2">
         <button type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
           <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
         </svg></button>
       </div>
-    </div>
-  </div>
-</form>
+   
   
-  
-  <div class="row">
-  <div class="col-6"><h2 id="date"></h2></div></div>
-  
-  
-  <div class="row">
-  <div class="col-6"><img src="images/weather_icons-01.svg" alt=""></div>
+
+      <div class="overview">
+        <h1 id="city"></h1>
+        <ul>
+          <li>Last updated: <span id="date"></span></li>
+          <li id="description"></li>
+        </ul>
+      </div>
+      <div class="row">
+
+        <div class="col-6">
+          <div class="clearfix weather-temperature">
+            <img src="images/weather_icons-01.svg" alt="Clear" id="icon" class="float-left" />
+            <div class="float-left">
+              <strong id="temperature"></strong
+              ><span class="units"
+                ><a href="#" id="celsius-link" class="active">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a></span
+              >
+            </div>
+          </div>
+        </div>
+
   <div class="col-6"><ul>
-  
-  <li> <span class="temp">7°</span> <a href="#" id="cel">C </a>| <a href="#" id="far">F</a></li>
+
   <li> Mostly sunny</li>
   <li>Wind: 2 km/h</li>
   <li>Air quality: Poor</li>
   </ul>
   </div>
   </div>
+</div>
       
   <div class="days">
    <div class="row">
-          <div class="col">Mon</div>
-          <div class="col"><img src="images/weather_icons-02.svg" alt=""></div>
-          <div class="col">10°/<span class="night-1">6°</span></div></div>
+          <div class="col-4">Mon</div>
+          <div class="col-4"><img src="images/weather_icons-02.svg" alt=""></div>
+          <div class="col-4">10°/<span class="night-1">6°</span></div></div>
           <div class="row">
             <div class="col-4">Mon</div>
             <div class="col-4"><img src="images/weather_icons-04.svg" alt=""></div>
