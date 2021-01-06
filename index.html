@@ -17,19 +17,34 @@
 
   <body>
 <div class="container">
-  <div class="container">
-    <div class="app">
-  
-     
-    <div class="row">
-    <div class="col-6"><h1>LONDON</h1></div>
-    <div class="col-6">
-    
-      <form id="city-form">
-          <input type="text" placeholder="Change a city..." autocomplete="off autofocus="on" id="city"/></form>
-  
+<div class="app-wrapper">
+<div class="app">
+<div class="buttons"
+
+<form id="search-form" class="mb-3">
+  <div class="row">
+    <div class="col-8">
+      <input
+        type="search"
+        placeholder="Type a city.."
+        class="form-control"
+        id="city-input"
+        autocomplete="off"
+      />
+    </div>
+      <div class="col-2">
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+      <div class="col-2">
+        <button type="button" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+        </svg></button>
+      </div>
+    </div>
   </div>
-  </div>
+</form>
+  
+  
   <div class="row">
   <div class="col-6"><h2 id="date"></h2></div></div>
   
@@ -48,9 +63,9 @@
       
   <div class="days">
    <div class="row">
-          <div class="col-4">Mon</div>
-          <div class="col-4"><img src="images/weather_icons-02.svg" alt=""></div>
-          <div class="col-4">10°/<span class="night-1">6°</span></div></div>
+          <div class="col">Mon</div>
+          <div class="col"><img src="images/weather_icons-02.svg" alt=""></div>
+          <div class="col">10°/<span class="night-1">6°</span></div></div>
           <div class="row">
             <div class="col-4">Mon</div>
             <div class="col-4"><img src="images/weather_icons-04.svg" alt=""></div>
@@ -70,6 +85,8 @@
    </div>
   </div>
   </div>
+</div>
+</div>
 		<small>Coded by Kasia Krasucka: <a href="https://github.com/kasia16/Vanilla-weather-app" target="_blank">Open-source code</a></small>
     <script src="src/index.js"></script>
   </body>

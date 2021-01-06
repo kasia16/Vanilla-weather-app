@@ -1,1 +1,17 @@
 h1, h2, .container {font-family: 'Quicksand', sans-serif;}
+
+
+.app-wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+  }
+
+  .buttons {
+      padding: 0;
+  }
+  
+.app {
+    padding: 20px;
+    border: 2px solid #dadde1;
+    border-radius: 10px;
+  }
