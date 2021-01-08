@@ -14,8 +14,6 @@ return ` ${hours}:${minutes}`;
 
 function displayTemperature(response){
 
-console.log(response.data);
-
 let cityElement = document.querySelector("#city");
 let dateElement = document.querySelector("#date");
 
