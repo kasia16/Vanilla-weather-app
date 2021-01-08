@@ -9,7 +9,7 @@
 .container {
     padding: 20px 20px 24px;
     border: 2px solid #dfe1e5;
-    border-radius: 10px;
+    border-radius: 20px;
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     width: 618px;
    
@@ -78,9 +78,9 @@ h2 {
    
   }
 
-.days {text-align: center;
+.days {text-align: center;}
 
-}
+
 p {text-align: center;
   padding: 0;
   margin 0;}
