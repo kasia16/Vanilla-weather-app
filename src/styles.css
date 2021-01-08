@@ -28,23 +28,24 @@
     line-height: 28px;
     margin-bottom: 0;
     text-align: left; 
-    padding: 20px 10px 10px 20px;
+    padding: 20px 0 10px 20px;
   }
 
 h2 {
     color: #878787;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 12px;
     margin-bottom: 0;
     margin-top: 0px;
-    text-align: left; 
-    padding: 0 80px 30px 20px;
+    margin-right: 0px;
+    padding: 0 50px 40px 20px;
+ 
   }
 
   .icon {
     margin-bottom: 0;
     margin-top: 0px;
-    padding: 20px 0px 30px 67px;
+    padding: 0px 0px 0px 0px;
     display: block;
   }
 
@@ -63,7 +64,7 @@ h2 {
     line-height: 19px;
   }
   .weather-temperature {
-    padding: 30px 0 30px 0px;
+    padding: 20px 0px 0px 0px;
     text-align: left; 
   }
   .weather-temperature strong {
