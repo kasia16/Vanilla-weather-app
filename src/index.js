@@ -43,10 +43,10 @@ dateElement.innerHTML = formatDate(response.data.dt *1000);
 
 function search(city){
 
-let apiKey = "2a93853098f7d48795c997915462e083";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
 }
+
 
 function handleSubmit(event){
     event.preventDefault();
@@ -54,7 +54,25 @@ function handleSubmit(event){
     search(cityInputElement.value);
 }
 
-search("London");
+function searchLocation(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+    axios.get(url).then(displayTemperature);
+  }
+
+  function showCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+  
+}
+
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let button = document.querySelector("button");
+button.addEventListener("click", showCurrentLocation);
+
+let apiKey = "2a93853098f7d48795c997915462e083";
+search("London");
