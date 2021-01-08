@@ -59,7 +59,6 @@ axios.get(apiUrl).then(displayTemperature);
     }}
   
 
-
 function searchLocation(position) {
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
@@ -77,7 +76,7 @@ function searchLocation(position) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let button = document.querySelector("button");
+let button = document.querySelector("location-button");
 button.addEventListener("click", showCurrentLocation);
 
 let apiKey = "2a93853098f7d48795c997915462e083";
