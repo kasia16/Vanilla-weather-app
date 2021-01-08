@@ -76,7 +76,7 @@ function searchLocation(position) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let button = document.querySelector("location-button");
+let button = document.querySelector("button");
 button.addEventListener("click", showCurrentLocation);
 
 let apiKey = "2a93853098f7d48795c997915462e083";
