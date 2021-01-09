@@ -1,22 +1,22 @@
 .container {font-family: 'Quicksand', sans-serif;}
 
 .app-wrapper {
-    margin: 20px auto;
+    margin: 20px auto 5px;
     width: 618px;
   }
 
   
 .container {
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 20px 10px;
     border: 2px solid #dfe1e5;
     border-radius: 20px;
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    width: 600px;
+    width: 618px;
    
   }
 
   .pic {
-    padding: 20px 0 0 20px;
+    padding: 20px 0 0 10px;
 }
 
 
@@ -28,7 +28,7 @@
     line-height: 28px;
     margin-bottom: 0;
     text-align: left; 
-    padding: 20px 0 10px 0;
+    padding: 10px 0 10px 0px;
   }
 
 h2 {
@@ -38,7 +38,7 @@ h2 {
     margin-bottom: 0;
     margin-top: 0px;
     margin-right: 0px;
-    padding: 0 0 10px 0;;
+    padding: 0 0 10px 0px;;
  
   }
 
@@ -86,9 +86,31 @@ cursor: default;
 .weather-temperature .active:hover {
    text-decoration: none;}
 
-.days {text-align: center;}
+
+h3 {
+    margin: 20px 0 0 0;
+    padding: 30px 0 0 0;
+    color: rgb(135, 135, 135);
+    font-size: 16px;}
+
+.weather-forecast {
+  margin: 0;
+  padding: 0;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.weather-forecast img {
+  margin: 0 auto;
+display: block;
+height: 50px;
+width: 50px;
+}
+
 
 p {text-align: center;
   padding: 0;
-  margin 0;}
+  margin: 0;}
   
