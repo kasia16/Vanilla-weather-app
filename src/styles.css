@@ -7,11 +7,11 @@
 
   
 .container {
-    padding: 20px 20px 24px;
+    padding: 20px 0 20px 20px;
     border: 2px solid #dfe1e5;
     border-radius: 20px;
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    width: 618px;
+    width: 600px;
    
   }
 
@@ -28,7 +28,7 @@
     line-height: 28px;
     margin-bottom: 0;
     text-align: left; 
-    padding: 20px 0 10px 20px;
+    padding: 20px 0 10px 0;
   }
 
 h2 {
@@ -38,7 +38,7 @@ h2 {
     margin-bottom: 0;
     margin-top: 0px;
     margin-right: 0px;
-    padding: 0 50px 40px 20px;
+    padding: 0 0 10px 0;;
  
   }
 
