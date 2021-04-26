@@ -103,24 +103,6 @@ function searchLocation(position) {
   
 }
 
-function showFahrenheitTemp(event){
-    event.preventDefault();
-    let temperatureElement = document.querySelector("#temperature");
-
-    celciusLink.classList.remove("active");
-    fahrenheitLink.classList.add("active");
-    let fahrenheitTemp = (celciusTemperature * 9) / 5 + 32;
-    temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-}
-
-function showCelciusTemp(event){
-    event.preventDefault();
-    celciusLink.classList.add("active");
-    fahrenheitLink.classList.remove("active");
-    let temperatureElement = document.querySelector("#temperature");
-    temperatureElement.innerHTML = Math.round(celciusTemperature);
-
-}
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
@@ -128,13 +110,6 @@ form.addEventListener("submit", handleSubmit);
 let button = document.querySelector("button");
 button.addEventListener("click", showCurrentLocation);
 
-let celciusTemperature = null;
-
-let fahrenheitLink = document.querySelector("#cel");
-fahrenheitLink.addEventListener("click", showCelciusTemp)
-
-let celciusLink = document.querySelector("#far");
-celciusLink.addEventListener("click", showFahrenheitTemp)
 
 let apiKey = "2a93853098f7d48795c997915462e083";
 
