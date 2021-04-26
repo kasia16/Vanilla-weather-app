@@ -13,6 +13,7 @@
   border-radius: 20px;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   width: 618px;
+  color: #6d6666;
 }
 
 .pic {
@@ -20,17 +21,15 @@
 }
 
 h1 {
-  color: #878787;
   font-size: 28px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
   text-align: left;
-  padding: 10px 0 10px 0px;
+  padding: 20px 0 10px 0px;
 }
 
 h2 {
-  color: #878787;
   font-size: 14px;
   line-height: 12px;
   margin-bottom: 0;
@@ -41,56 +40,38 @@ h2 {
 
 .icon {
   margin-bottom: 0;
-  margin-top: 0;
   padding: 0;
   display: block;
 }
 
-ul {
+.weather-temperature {
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
+  font-size: 64px;
 }
 
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: rgb(135, 135, 135);
+.description {
+  margin: 30px 0;
+  padding: 23px 0 0 0;
   font-size: 16px;
-  font-weight: 100;
-  line-height: 19px;
-}
-.weather-temperature {
-  padding: 20px 0 0 0;
   text-align: left;
 }
-.weather-temperature strong {
-  color: rgb(33, 33, 33);
-  font-size: 64px;
-  line-height: 1;
+ul {
+  list-style: none;
+  padding: 0;
+}
+.description .units {
+  font-size: 36px;
   font-weight: 400;
-}
-.weather-temperature .units {
-  font-size: 16px;
-}
-.weather-temperature .active {
-  color: rgb(135, 135, 135);
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
 }
 
 h3 {
-  margin: 20px 0 0 0;
+  margin: 0;
   padding: 30px 0 0 0;
-  color: rgb(135, 135, 135);
   font-size: 16px;
 }
 .weather-forecast {
   padding: 0;
-  color: rgb(135, 135, 135);
   font-size: 16px;
   line-height: 19px;
   text-align: center;
